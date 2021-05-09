@@ -95,7 +95,7 @@ public class Client extends Thread implements GUIObservable {
                             throw new TooManyPlayersException("No space for you");
                         default:
                             launchNewGame();
-                            sendMessage(new CommandMessage(CommandType.GetUserList, ""));
+                            // sendMessage(new CommandMessage(CommandType.GetUserList, ""));
                             notifyObservers();
                             break;
                     }

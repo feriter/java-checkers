@@ -3,8 +3,6 @@ package ru.nsu.ccfit.ClientServer.Server;
 import com.google.gson.Gson;
 import ru.nsu.ccfit.ClientServer.Exceptions.NotEnoughPlayersException;
 import ru.nsu.ccfit.ClientServer.Exceptions.TooManyPlayersException;
-import ru.nsu.ccfit.ClientServer.Messages.CommandMessage;
-import ru.nsu.ccfit.ClientServer.Messages.CommandType;
 import ru.nsu.ccfit.ClientServer.Messages.Notification;
 import ru.nsu.ccfit.Game.CheckerColor;
 import ru.nsu.ccfit.Game.GameModel;

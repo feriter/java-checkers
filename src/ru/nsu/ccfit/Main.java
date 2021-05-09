@@ -2,9 +2,6 @@ package ru.nsu.ccfit;
 
 import ru.nsu.ccfit.ClientServer.Client.Client;
 import ru.nsu.ccfit.ClientServer.Server.Server;
-import ru.nsu.ccfit.GUI.GameGUI;
-
-import java.io.IOException;
 
 public class Main {
 

@@ -1,7 +1,5 @@
 package ru.nsu.ccfit.ClientServer.Server;
 
-import ru.nsu.ccfit.ClientServer.Server.Session;
-
 public class TimeoutCounter extends Thread {
     private int interval = 10; // seconds until disconnect
     private int currentInterval = 0;

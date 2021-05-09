@@ -42,12 +42,12 @@ public class Session extends Thread {
             try {
                 message = in.readUTF();
                 server.handleMessage(message, this);
-            } catch (WrongMoveException e) {
-                logger.warn("Received wrong move. Message: " + e.getMessage());
             } catch (IOException e) {
                 logger.error("Troubles with io. Close connection " +
                         clientSocket.toString() + ". Message: " + e.getMessage());
                 server.closeSession(this);
+            } catch (WrongMoveException e) {
+                logger.warn("Received wrong move. Message: " + e.getMessage());
             } catch (IncorrectMessageFormatException e) {
                 logger.warn("Received incorrect message. Message: " + message);
             } catch (InvalidRoomIdException e) {
