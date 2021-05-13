@@ -1,7 +1,8 @@
 package ru.nsu.ccfit;
 
-import ru.nsu.ccfit.ClientServer.Client.Client;
-import ru.nsu.ccfit.ClientServer.Server.Server;
+import ru.nsu.ccfit.Client.Client;
+import ru.nsu.ccfit.GUI.GameGUI;
+import ru.nsu.ccfit.Server.Server;
 
 public class Main {
 
@@ -11,12 +12,11 @@ public class Main {
 
         var client1 = new Client();
         var client2 = new Client();
-//        var client3 = new Client();
-//        var client4 = new Client();
+
+        var gui1 = new GameGUI(client1);
+        var gui2 = new GameGUI(client2);
 
         client1.start();
         client2.start();
-//        client3.start();
-//        client4.start();
     }
 }
