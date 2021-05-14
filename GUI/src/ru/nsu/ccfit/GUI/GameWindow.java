@@ -1,7 +1,6 @@
 package ru.nsu.ccfit.GUI;
 
 import com.google.gson.Gson;
-import ru.nsu.ccfit.Client.ChatMessagesDisplay;
 import ru.nsu.ccfit.Client.Client;
 import ru.nsu.ccfit.GUIAction;
 import ru.nsu.ccfit.GUIObservable;
